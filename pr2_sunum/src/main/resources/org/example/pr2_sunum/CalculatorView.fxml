@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" xmlns:fx="http://javafx.com/javafx" xmlns="http://javafx.com/fxml" fx:controller="org.example.pr2_sunum.CalculatorController"
+            style="-fx-background-color: #2E2E2E; -fx-padding: 20;">
+    <TextField fx:id="display" editable="false" layoutX="10" layoutY="15" prefWidth="340"
+               style="-fx-background-color: #1E1E1E; -fx-text-fill: #A0A0A0; -fx-font-size: 12; -fx-font-weight: lighter; -fx-opacity: 0.7; -fx-padding: 5;"/>
+
+    <TextField fx:id="runningResultDisplay" editable="false" layoutX="10" layoutY="40" prefWidth="340"
+               style="-fx-background-color: #1E1E1E; -fx-text-fill: #FFFFFF; -fx-font-size: 16; -fx-padding: 5;"/>
+
+    <Button text="7" onAction="#handleNumber" layoutX="10" layoutY="100" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="8" onAction="#handleNumber" layoutX="80" layoutY="100" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="9" onAction="#handleNumber" layoutX="150" layoutY="100" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="+" onAction="#handleOperation" layoutX="220" layoutY="100" prefWidth="60"
+            style="-fx-background-color: #42A5F5; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="AC" onAction="#handleAllClear" layoutX="290" layoutY="100" prefWidth="60"
+            style="-fx-background-color: #FF3D00; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+
+
+    <Button text="4" onAction="#handleNumber" layoutX="10" layoutY="160" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="5" onAction="#handleNumber" layoutX="80" layoutY="160" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="6" onAction="#handleNumber" layoutX="150" layoutY="160" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="-" onAction="#handleOperation" layoutX="220" layoutY="160" prefWidth="60"
+            style="-fx-background-color: #42A5F5; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="C" onAction="#handleClear" layoutX="290" layoutY="160" prefWidth="60"
+            style="-fx-background-color: #FF7043; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+
+
+    <Button text="1" onAction="#handleNumber" layoutX="10" layoutY="220" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="2" onAction="#handleNumber" layoutX="80" layoutY="220" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="3" onAction="#handleNumber" layoutX="150" layoutY="220" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="*" onAction="#handleOperation" layoutX="220" layoutY="220" prefWidth="60"
+            style="-fx-background-color: #42A5F5; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+
+    <Button text="0" onAction="#handleNumber" layoutX="10" layoutY="280" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="." onAction="#handleDecimal" layoutX="80" layoutY="280" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="(-)" onAction="#handleNegate" layoutX="150" layoutY="280" prefWidth="60"
+            style="-fx-background-color: #4D4D4D; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+    <Button text="/" onAction="#handleOperation" layoutX="220" layoutY="280" prefWidth="60"
+            style="-fx-background-color: #42A5F5; -fx-text-fill: #FFFFFF; -fx-font-size: 16;"/>
+
+    <Button text="=" onAction="#handleEquals" layoutX="290" layoutY="220" prefWidth="60" prefHeight="95"
+            style="-fx-background-color: #66BB6A; -fx-text-fill: #FFFFFF; -fx-font-size: 18;"/>
+</AnchorPane>
